@@ -2,11 +2,119 @@
     box-sizing: border-box;
 }
 
-html {
+:root {
     font-size: 62.5%;
+    --primary-color: #0F1B4C;
 }
 
 body {
     font-size: 1.6rem;
     font-family: 'Poppins';
+}
+
+a {
+    text-decoration: none;
+}
+
+.btn {
+    display: inline-block;
+    padding: 18px 16px;
+    min-width: 98px;
+    border-radius: 8px;
+    background: var(--primary-color); 
+    color: #FFF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 500;
+}
+
+.content {
+    width: 1110px;
+    max-width: calc(100% - 48px);  
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header {
+    width: 100vw;
+    height: 100vh;
+    background-color: #E6F0FF;;
+}
+
+.navbar {
+    display: flex;
+    padding: 38px;
+}
+
+.navbar  ul {
+    padding-top: 18px;
+    display: flex;
+    margin-left: 50px;
+}
+
+.navbar ul a {
+    position: relative;
+    color: #4F5361;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 14px;
+    transition: color 0.3s ease;
+}
+
+.navbar ul a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 100%;
+    background-color: var(--primary-color);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s ease;
+}
+
+.navbar ul a:hover::after {
+    transform: scaleX(1);
+}
+
+.actions {
+    margin-left: auto;
+}
+
+.actions .sign-in {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    transition: color 0.3s ease, filter 0.3s ease;
+}
+
+.actions .sign-in {
+    color: var(--primary-color);
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 8px 14px;
+    border-radius: 8px;
+    transition: color 0.5s ease,
+                background-color 0.5s ease;
+}
+  
+.actions .sign-in:hover {
+    background-color: rgba(15, 27, 76, 0.1);
+    color: var(--primary-color); 
+}
+
+.sign-up {
+    padding: 13px 16px;
+    margin-left: 18px;
+    transition: 
+        color 0.3s ease, 
+        background 0.3s ease, 
+        filter 0.3s ease, 
+        transform 0.3s ease;
+}
+
+.sign-up:hover {
+    filter: drop-shadow(0 0 10px #a8a8a8);
+    transform: scale(1.05);
 }
