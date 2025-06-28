@@ -9,7 +9,7 @@
 
 body {
     font-size: 1.6rem;
-    font-family: 'Poppins';
+    font-family: 'Poppins', serif;
 }
 
 a {
@@ -69,6 +69,7 @@ a {
 
 .navbar img {
     margin-left: -40px;
+    cursor: pointer;
 }
 
 .navbar ul a::after {
@@ -202,11 +203,30 @@ a {
     margin-top: 10.27rem;
 }
 
+.clients .companies a {
+    display: flex;
+    align-items: center;
+    height: 90px;
+    padding: 0 42px;
+    border-radius: 1.2rem;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.clients .companies a:hover {
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.10);
+    transform: translateY(-4px);
+}
+
 
 /* ====Guides==== */
 
 .guides {
    margin-top: 20rem;
+}
+
+.guides .content {
+    max-width: 68.5rem;
+    height: 42.7rem;
 }
 
 .guides .sub-title {
@@ -240,6 +260,50 @@ a {
     font-weight: 400;
     line-height: 3rem; 
     margin: 2rem auto 0;
+}
+
+.content .seller {
+    margin-top: 7rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.seller .sell-guide img {
+    margin-left: 4.5rem;
+}
+
+.seller .sell-guide .title {
+    margin-top: 2.6rem;
+    color: #3B3C45;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.seller .sell-guide  a {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    color: #0689FF;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.seller .sell-guide a img {
+    margin-left: 6px;
+}
+
+.content .sell-btn{
+    cursor: pointer;
+    margin: 5rem auto 0;
+    color: #FFF;
+    text-align: center;
+    font-family: 'Poppins';
+    font-size: 1.3rem;
+    font-weight: 500;
+    margin-left: 50%;
+    transform: translate(-50%);
 }
 
 
