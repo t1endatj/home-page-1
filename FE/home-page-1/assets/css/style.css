@@ -10,6 +10,7 @@
 body {
     font-size: 1.6rem;
     font-family: 'Poppins', serif;
+    overflow-x: hidden;
 }
 
 a {
@@ -179,7 +180,8 @@ a {
 /* ====Clients==== */
 
 .clients {
-    margin-top: 122px;
+    margin-top: 7.9rem;
+    padding: 4.3rem 0 2.3rem;
 }
 .clients img {
     cursor: pointer;
@@ -221,7 +223,8 @@ a {
 /* ====Guides==== */
 
 .guides {
-   margin-top: 20rem;
+   margin-top: 4.1rem;
+   padding: 9.3rem 0 0;
 }
 
 .guides .content {
@@ -295,8 +298,10 @@ a {
 }
 
 .content .sell-btn{
+    min-width: 17rem;
+    height: 5rem;
     cursor: pointer;
-    margin: 5rem auto 0;
+    margin-top: 5rem;
     color: #FFF;
     text-align: center;
     font-family: 'Poppins';
@@ -306,5 +311,110 @@ a {
     transform: translate(-50%);
 }
 
+/* ====Features==== */
 
+.features {
+    margin-top: 12rem;
+    height: 72.7rem;
+    background: #F5FAFE;
+}
+
+.features .sub-title {
+    padding-top: 11rem;
+}
+
+.features .sub-title {
+    color: #000339;
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.features .row {
+    margin-top: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features .row p {
+    color: #5A6473;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.features .row a{
+    color: #0689FF;
+    text-align: right;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.features .list {
+    margin-top: 7rem;
+    display: flex;
+    gap: 3rem;
+}
+
+.features .item {
+    background-color: #ffffff;
+    flex: 1;
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+}
+
+
+.features .item .thumb {
+    width: 100%;
+    height: 27.7rem;
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+}
+
+.features .item .body {
+    padding: 17px 20px 24px;
+}
+
+.features h3 {
+    color: #000339;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.features p {
+    color: #A3A6AB;
+    font-size: 1.4rem;
+    font-weight: 500;
+    margin-top: 1.1rem;
+}
+
+.features .info {
+    display: flex;
+    align-items: center;
+    margin-top: 2.1rem;
+}
+
+
+.features .label {
+    margin-left: 0.8rem;
+    color: #444;
+    font-size: 1.4rem;
+    font-weight: 500;
+    letter-spacing: 0.014rem;
+}
+
+.features .item .info .icon {
+   margin-left: 2.3rem;
+}
+
+.features .item .icon:first-child{
+    margin-left: -5px;
+}
+
+
+/* Stat */
+
+.stat {
+    margin-top: 75px;
+    padding: 100px 0;
+}
 
