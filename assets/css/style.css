@@ -413,14 +413,14 @@ a {
 }
 
 
-.item {
+.features .item {
   position: relative;
   overflow: hidden;
   border-radius: 3px;
   transition: box-shadow 0.3s ease, transform 0.3s ease;
 }
 
-.item:hover {
+.features .item:hover {
   box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2);
   transform: translateY(-1px);
 }
